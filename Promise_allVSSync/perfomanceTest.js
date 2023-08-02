@@ -11,7 +11,6 @@ async function fetch1() {
     const data = await response.json();
     let performanceTimeStamp = end - start;
     return performanceTimeStamp;
-    // console.log(`Individual perfomance (fetch1): ${performanceTimeStamp}`);
   } catch (error) {
     console.log(error);
   }
@@ -81,9 +80,7 @@ async function fetchData2() {
     console.log(
       `Individual Perfomance (fetch3) (Promise all method): ${response2} ms`
     );
-    console.log(
-      `Execution time (Promise All) (Promise all method): ${end - start} ms`
-    );
+    console.log(`Execution time (Promise All method): ${end - start} ms`);
   } catch (error) {}
 }
 fetchData2();
