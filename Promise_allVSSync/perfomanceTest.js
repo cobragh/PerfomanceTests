@@ -38,7 +38,6 @@ async function fetch3() {
     const data = await response.json();
     let performanceTimeStamp = end - start;
     return performanceTimeStamp;
-    console.log(`Individual perfomance (fetch3): ${performanceTimeStamp}`);
   } catch (error) {
     console.log(error);
   }
@@ -84,3 +83,8 @@ async function fetchData2() {
   } catch (error) {}
 }
 fetchData2();
+
+async function race() {
+  Promise.race([fetchData, fetchData2]);
+}
+race();
