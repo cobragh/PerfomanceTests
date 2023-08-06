@@ -1,4 +1,4 @@
-// STARTING A SERVER USING E
+// STARTING A SERVER USING EXPRESS
 // import express from "express";
 // const app = express();
 // const port = 3000;
