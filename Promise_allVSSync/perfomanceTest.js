@@ -83,8 +83,3 @@ async function fetchData2() {
   } catch (error) {}
 }
 fetchData2();
-
-async function race() {
-  Promise.race([fetchData, fetchData2]);
-}
-race();
