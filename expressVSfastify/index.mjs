@@ -9,6 +9,7 @@
 // let end = performance.now();
 // console.log(`Execution timeStamp with Express: ${end - start} ms `);
 
+// STARTING A SERVER USING Fastify
 import Fastify from "fastify";
 const fastify = Fastify();
 const port = 3000;
