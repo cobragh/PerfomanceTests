@@ -8,22 +8,30 @@ This repository contains a simple Node.js code to start a server using both Expr
 
 ## Installation and Usage
 
-1. Clone the repository to your local machine:
+##### 1. Clone the repository to your local machine:
 
-git clone <repository-url>
+```bash
+git clone git@github.com:cobragh/PerfomanceTests.git
 
-2. Navigate to the project directory:
+```
 
-cd <project-directory>
+##### 2. Navigate to the project directory:
 
-3. Install the dependencies:
+```bash
+cd expressVSfastify
+```
 
+##### 3. Install the dependencies:
+
+```bash
 npm install
+```
 
-4. Start the server with Express:
+##### 4. Start the server with Express:
 
-Uncomment the following code block in the `index.js` file:
+Uncomment the following code block in the index.js file to use Express:
 
+```javascript
 // import express from "express";
 // const app = express();
 // const port = 3000;
@@ -33,9 +41,13 @@ Uncomment the following code block in the `index.js` file:
 // });
 // let end = performance.now();
 // console.log(`Execution timeStamp with Express: ${end - start} ms `);
-Start the server with Fastify:
-Comment out the Express code block above and uncomment the following code block in the index.js file:
+```
 
+##### 5. Start the server with Fastify:
+
+Comment out the Express code block above and uncomment the following code block in the index.mjs file to use Fastify:
+
+```
 // STARTING A SERVER USING Fastify
 import Fastify from "fastify";
 const fastify = Fastify();
@@ -46,10 +58,12 @@ console.log(`Server listening with Fastify!`);
 });
 let end = performance.now();
 console.log(`Execution timeStamp with Fastify: ${end - start} ms `);
-Run the server:
-sql
-Copy code
-npm start
-Observe the output in the console, which will show the execution time for each server startup.
-License
-This project is licensed under the MIT License.
+```
+
+##### 6. Run the server:
+
+```bash
+   npm start
+```
+
+##### 7. Observe the output in the console, which will show the execution time for each server startup.
